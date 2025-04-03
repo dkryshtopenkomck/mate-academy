@@ -1,0 +1,39 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chrome": "npx playwright test --project=chromium --headed",
+    "test:firefox": "npx playwright test --project=firefox --headed",
+    "test:chrome:headless": "npx playwright test --project=chromium",
+    "test:firefox:headless": "npx playwright test --project=firefox",
+    "test:live": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:slowmo": "npx playwright test --headed --slow-mo=500",
+    "test:report": "npx playwright test --reporter=html && npx playwright show-report",
+    "test:filter": "npx playwright test -g",
+    "codegen": "npx playwright codegen",
+    "clean": "rm -rf playwright-report test-results",
+    "lint": "eslint --fix",
+    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
+    "postinstall": "npx playwright install firefox chromium --with-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.6.3",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "prettier": "^3.4.2"
+  }
+}

@@ -1,0 +1,24 @@
+# Node.js related files
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm/
+.npm/
+
+# Development environment files
+.vscode/
+.idea/
+
+# macOS and Windows specific files
+.DS_Store
+Thumbs.db
+
+# Configuration files (unless needed inside the container)
+.env
+.env.*
+*.tgz
+*.zip
+
+# Temporary files
+*.log

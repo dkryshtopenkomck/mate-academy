@@ -1,0 +1,9 @@
+**/dist
+**/node_modules
+**/reports
+**/test-results
+**/allure
+**/allure-report
+**/allure-results
+.DS_Store
+.idea
