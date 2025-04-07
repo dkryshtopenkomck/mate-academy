@@ -12,7 +12,7 @@ const credentials = [
 ];
 
 for (const creds of credentials) {
-  test.skip(`${creds.valid ? "valid" : "invalid"}: ${creds.email}:${creds.password}`, async ({
+  test(`${creds.valid ? "valid" : "invalid"}: ${creds.email}:${creds.password}`, async ({
     page,
   }) => {
     const loginPage = new LoginPage(page);
